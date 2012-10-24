@@ -2,7 +2,7 @@
 %define		plugin	check_vserver_count
 Summary:	Nagios plugin to check vserver count
 Name:		nagios-plugin-%{plugin}
-Version:	0.1
+Version:	0.2
 Release:	1
 License:	GPL v2
 Group:		Networking
