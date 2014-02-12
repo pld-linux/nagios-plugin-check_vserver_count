@@ -1,8 +1,9 @@
 #!/bin/sh
 
 [ -n "$UTIL_VSERVER_VARS" ] || {
-	UTIL_VSERVER_VARS=/usr/lib64/util-vserver/util-vserver-vars
+	UTIL_VSERVER_VARS=/usr/share/util-vserver/util-vserver-vars
 	[ -e "$UTIL_VSERVER_VARS" ] || UTIL_VSERVER_VARS=/usr/lib/util-vserver/util-vserver-vars
+	[ -e "$UTIL_VSERVER_VARS" ] || UTIL_VSERVER_VARS=/usr/lib64/util-vserver/util-vserver-vars
 }
 if [ ! -e "$UTIL_VSERVER_VARS" ] ; then
 	echo "Can not find util-vserver installation (the file '$UTIL_VSERVER_VARS' would be expected); aborting..." >&2

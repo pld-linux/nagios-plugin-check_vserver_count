@@ -3,7 +3,7 @@
 Summary:	Nagios plugin to check vserver count
 Name:		nagios-plugin-%{plugin}
 Version:	0.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Networking
 Source0:	%{plugin}.sh
